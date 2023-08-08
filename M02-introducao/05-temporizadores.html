@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizadores</title>
+</head>
+
+<body>
+    <script>
+        // setInterval
+        /* function acaoTexto() {
+            document.write("Testando a função setInterval... </br>")
+        }
+        
+        setInterval(acaoTexto, 1000) */
+
+        /* var timer = setInterval(function () {
+            document.write("Testando a função setInterval... </br>")
+        }, 1000) */
+
+// setTimeout
+        /* function acaoTexto() {
+            document.write("Testando a função setTimeout... </br>")
+        }
+        
+        setTimeout(acaoTexto, 5000) */
+
+        /* setTimeout(function () {
+            console.log("Testando a função setTimeout")
+        }, 2000) */
+
+        /*###############################################################*/
+
+        /* function horarioAtual() {
+            let hora = new Date().toTimeString();
+            console.log(hora)
+        }
+        setInterval(horarioAtual, 1000) */
+
+        /*###############################################################*/
+
+        /* function soma(a, b) {
+            console.log(a + b)
+        }
+        setInterval(soma, 1000, 20, 30) */
+
+        /*###############################################################*/
+
+        /* let contador = 0
+        function somaContator(valor) {
+            contador += valor
+            console.log(contador)
+        }
+        setInterval(somaContator, 1000, 1) */
+
+        /*###############################################################*/
+
+        /* function horarioAtual() {
+            let dataAtual = new Date();
+            let hora = dataAtual.toLocaleTimeString();
+            console.log(hora);
+        }
+        
+        setTimeout(horarioAtual, 2000) */
+
+        /*###############################################################*/
+
+        /* function msgEncerramento() {
+            alert("Seu tempo encerrou!!!")
+        }
+        
+        setTimeout(msgEncerramento, 2000) */
+
+        /*###############################################################*/
+
+        /* function soma(a, b) {
+            console.log(a + b);
+        }
+        
+        setTimeout(soma, 2000, 5, 15) */
+
+        /*###############################################################*/
+
+        /* setTimeout(() => {
+            console.log("1. HTML")
+            setTimeout(() => {
+                console.log("1. CSS")
+                setTimeout(() => {
+                    console.log("1. JAVASCRIPT")
+                }, 3000)
+            }, 4000)
+        }, 1000) */
+    </script>
+
+    <p>Clique no botão abaixo para ver a hora atual.</p>
+    <button onclick="horaAtual()">Clique aqui</button>
+    <h2 id="rel"></h2>
+
+    <script>
+        function horaAtual(){
+            setInterval(() => {
+                let hora = new Date().toLocaleTimeString();
+                document.getElementById("rel").innerHTML = hora;
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html>
