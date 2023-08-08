@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+</head>
+
+<body>
+    <button id="btn1" type="button">Clique</button>
+
+    <script>
+        function olaJS() {
+            console.log("Funcionou o EventListener");
+        }
+
+        let button = document.querySelector("button");
+        // console.log(button);
+
+        // button.addEventListener("click", olaJS)
+
+        button.addEventListener("mouseover", olaJS)
+    </script>
+</body>
+
+</html>

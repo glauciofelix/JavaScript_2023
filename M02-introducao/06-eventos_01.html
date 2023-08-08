@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+</head>
+
+<body>
+    <button id="btn1" type="button">Ações Onclick</button>
+    <br><br>
+    <button id="btn2" type="button">Ações OnMouseOver</button>
+    <input id="input1" type="text">
+
+    <script>
+        function textoConsoleLog() {
+            console.log("Testando evento OnClick")
+        }
+
+        document.getElementById("btn1").onclick = textoConsoleLog;
+
+        document.getElementById("btn2").onmouseover = textoConsoleLog;
+
+        document.getElementById("input1").onkeyup = () => {
+            console.log("Teclas pressionadas")
+        }
+    </script>
+</body>
+
+</html>
